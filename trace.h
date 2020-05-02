@@ -35,7 +35,7 @@ Environment:
         WPP_DEFINE_BIT(DMF_TRACE)                                                       \
         )                                                                               \
     WPP_DEFINE_CONTROL_GUID(                                                            \
-        VHidMini2DmfU, (93D98F10,5DB5,4CB3,A57A,81CB4D73A81D),                          \
+        WtWacomSmartpadDmfU, (93D98F10,DEAD,BEEF,CAFE,81CB4D73A81D),                    \
         WPP_DEFINE_BIT(MYDRIVER_ALL_INFO)                                               \
         WPP_DEFINE_BIT(TRACE_DEVICE)                                                    \
         WPP_DEFINE_BIT(TRACE_CALLBACK)                                                  \

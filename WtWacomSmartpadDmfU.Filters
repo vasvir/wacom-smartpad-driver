@@ -19,22 +19,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DmfInterface.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="trace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="VHidMini2DmfU.rc">
+    <ClCompile Include="WtWacomSmartpadDmfU.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WtWacomSmartpadDmfU.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Inf Include="VHidMini2DmfU.inx">
+    <Inf Include="WtWacomSmartpadDmfU.inx">
       <Filter>Driver Files</Filter>
     </Inf>
   </ItemGroup>
