@@ -9,7 +9,7 @@ Copyright (c) Microsoft Corporation.  All rights reserved.
 
 Module Name:
 
-    DmfInterface.c
+    WtWacomSmartpadDmfU.c
 
 Abstract:
 
@@ -24,7 +24,7 @@ Environment:
 #include "DmfModules.Template.h"
 
 #include "Trace.h"
-#include "DmfInterface.tmh"
+#include "WtWacomSmartpadDmfU.tmh"
 
 // DMF: These lines provide default DriverEntry/AddDevice/DriverCleanup functions.
 //
