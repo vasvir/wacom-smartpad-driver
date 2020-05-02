@@ -161,7 +161,7 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions);DMF_USER_MODE</PreprocessorDefinitions>
     </ResourceCompile>
     <ClCompile>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\DMF\Modules.Template</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\DMF\Dmf\Modules.Template</AdditionalIncludeDirectories>
       <TreatWarningAsError>true</TreatWarningAsError>
       <WarningLevel>Level4</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);DMF_USER_MODE</PreprocessorDefinitions>
@@ -171,7 +171,7 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions);DMF_USER_MODE</PreprocessorDefinitions>
     </Midl>
     <Link>
-      <AdditionalDependencies>%(AdditionalDependencies);..\..\..\Debug\Win32\lib\DmfU\DmfU.lib;..\..\..\Debug\Win32\individual_libs\DmfUModules.Template\DmfUModules.Template.lib;advapi32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies);..\DMF\Debug\Win32\lib\DmfU\DmfU.lib;..\DMF\Debug\Win32\individual_libs\DmfUModules.Template\DmfUModules.Template.lib;</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
