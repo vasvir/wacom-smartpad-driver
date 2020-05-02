@@ -96,7 +96,7 @@
     <TargetName>VHidMini2DmfU</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <TargetName>VHidMini2DmfU</TargetName>
+    <TargetName>WtWacomSmartpadDmfU</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ResourceCompile>

@@ -13,7 +13,7 @@ Module Name:
 
 Abstract:
 
-    VHidMini2DmfU Sample: DMF version of VHIDMINI2 Sample (User-mode).
+    WtWacomSmartpadDmfU Sample: DMF version of VHIDMINI2 Sample (User-mode).
 
 Environment:
 
@@ -29,16 +29,16 @@ Environment:
 // DMF: These lines provide default DriverEntry/AddDevice/DriverCleanup functions.
 //
 DRIVER_INITIALIZE DriverEntry;
-EVT_WDF_DRIVER_DEVICE_ADD VHidMini2DmfEvtDeviceAdd;
-EVT_WDF_OBJECT_CONTEXT_CLEANUP VHidMini2DmfEvtDriverContextCleanup;
+EVT_WDF_DRIVER_DEVICE_ADD WtWacomSmartpadDmfUEvtDeviceAdd;
+EVT_WDF_OBJECT_CONTEXT_CLEANUP WtWacomSmartpadDmfUEvtDriverContextCleanup;
 EVT_DMF_DEVICE_MODULES_ADD DmfDeviceModulesAdd;
 
 /*WPP_INIT_TRACING(); (This comment is necessary for WPP Scanner.)*/
 #pragma code_seg("INIT")
 DMF_DEFAULT_DRIVERENTRY(DriverEntry,
-                        VHidMini2DmfEvtDriverContextCleanup,
-                        VHidMini2DmfEvtDeviceAdd,
-                        L"VHidMini2DmfU")
+                        WtWacomSmartpadDmfUEvtDriverContextCleanup,
+                        WtWacomSmartpadDmfUEvtDeviceAdd,
+                        L"WtWacomSmartpadDmfU")
 #pragma code_seg()
 
 typedef struct
@@ -50,11 +50,11 @@ typedef struct
 WDF_DECLARE_CONTEXT_TYPE_WITH_NAME(DEVICE_CONTEXT, DeviceContextGet)
 
 #pragma code_seg("PAGED")
-DMF_DEFAULT_DRIVERCLEANUP(VHidMini2DmfEvtDriverContextCleanup)
+DMF_DEFAULT_DRIVERCLEANUP(WtWacomSmartpadDmfUEvtDriverContextCleanup)
 
 _Use_decl_annotations_
 NTSTATUS
-VHidMini2DmfEvtDeviceAdd(
+WtWacomSmartpadDmfUEvtDeviceAdd(
     _In_ WDFDRIVER Driver,
     _Inout_ PWDFDEVICE_INIT DeviceInit
     )
